@@ -392,7 +392,7 @@ map.on("load", function() {
 
     // Add Video Symbol Layer -------------------------------------------------------
     map.loadImage(
-        '../images/pin_VideoCamera.png',
+        'https://github.com/GIAAIL/Resilient-Homeland-Data-Map_v1/blob/main/images/pin_VideoCamera.png',
         (error, image) => {
             if (error) throw error;
             map.addImage('custom-marker', image);

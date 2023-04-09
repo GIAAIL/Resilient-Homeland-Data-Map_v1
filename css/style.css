@@ -1,0 +1,362 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*-------------------------
+/* $font import
+---------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+
+/*-------------------------
+/* $Globel
+---------------------------*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #515151;
+}
+
+.wrapper {
+    background-color: transparent;
+}
+
+
+/*-------------------------
+/* $Header
+---------------------------*/
+
+
+/*-------------------------
+/* $Hero
+---------------------------*/
+
+.heroCard-container {
+    height: 105vh;
+    width: 100vw;
+    top: -5vh;
+    background-color: rgba(25, 30, 35, 0.65);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+    pointer-events: none;
+    /* display: none !important; */
+}
+
+.hide.heroCard-container {
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+}
+
+.heroCard {
+    width: 100%;
+}
+
+.heroCard .heroTitle {
+    transition: all ease-in-out 0.3s;
+    transition-delay: 1s;
+    overflow: hidden;
+}
+
+.hide .heroCard .heroTitle {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all ease-in-out 0.3s;
+}
+
+
+/*-------------------------
+/* $InfoCard
+---------------------------*/
+
+.infoCard-container {
+    height: 101vh;
+    width: 100vw;
+    top: 1vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    /* display: none !important; */
+}
+
+.infoCard {
+    width: 100%;
+    height: 80%;
+    /* background-color: #191e23;
+    border-radius: 3%;
+    border-color: #1e9696;
+    border-width: 1px;
+    border-style: solid; */
+    display: flex;
+    flex-direction: column;
+    transform: scale(1, 1);
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+    transition-delay: 1s
+}
+
+.hide .infoCard {
+    border-radius: 0%;
+    transform: scale(1.02, 1.02);
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+}
+
+#projectTitle {
+    /* text-shadow: 0 0 2px #191e23, 0 0 2px #03f5f5; */
+    -webkit-text-stroke: 1.5px #191e23;
+}
+
+#projectTitle::before {
+    content: "{ ";
+    color: #1e9696;
+    -webkit-text-stroke: 0px #191e23;
+}
+
+#projectTitle::after {
+    content: " }";
+    color: #1e9696;
+    -webkit-text-stroke: 0px #191e23;
+}
+
+
+/* .infoTitle {
+    float: left;
+} */
+
+.infoCard .infoContent {
+    width: 33%;
+    /* height: 85%; */
+    flex-grow: 1;
+    background-color: #191e23;
+    border-radius: 3%;
+    /* border-color: #1e9696;
+    border-width: 1px;
+    border-style: solid; */
+    /* display: inline-block;
+    text-align: center; */
+    opacity: 0.9;
+}
+
+.media-container {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.info-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.infotext-container {
+    width: 100%;
+    height: 20px;
+}
+
+
+/*-------------------------
+/* $Map
+---------------------------*/
+
+#map {
+    top: 0;
+    height: 100vh;
+    width: 130vw;
+    position: fixed;
+    right: -25vw;
+}
+
+#mapInset {
+    bottom: 50px;
+    right: 40px;
+    height: 120px;
+    width: 180px;
+    max-width: 100%;
+    position: fixed;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+    border: thick ridge #7b7b7b;
+    border-radius: 8px;
+}
+
+#mapInset .mapboxgl-ctrl-bottom-left {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    #mapInset {
+        display: none;
+    }
+}
+
+#header {
+    display: none;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+#footer {
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    line-height: 8px;
+    font-size: 8px;
+    position: relative;
+    z-index: 5;
+    background-color: #191e2396;
+}
+
+#footer p {
+    margin-bottom: 0px;
+}
+
+#footer a {
+    color: #78d2d2;
+}
+
+#story {
+    pointer-events: none;
+}
+
+#features {
+    padding-top: 10vh;
+    /* padding-bottom: 10vh; */
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.centered {
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.lefty {
+    /* width: 33vw; */
+    width: 560px;
+    /* width: 90vw; */
+    /* margin-left: 5vw; */
+    margin-left: 80px;
+}
+
+.righty {
+    width: 33vw;
+    margin-left: 62vw;
+}
+
+.fully {
+    width: 100%;
+    margin: auto;
+}
+
+.light {
+    color: #444;
+    background-color: #fafafa;
+}
+
+.dark {
+    color: #fafafa;
+    /* background-color: rgba(30, 50, 50, 0.2); */
+    /* background-color: rgba(255, 255, 255, 0); */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.step {
+    padding-bottom: 80vh;
+    /* margin-bottom: 10vh; */
+    /* opacity: 0.25; */
+    opacity: 0;
+}
+
+.step.active {
+    opacity: 0.9;
+}
+
+.step div {
+    padding: 0px 0px;
+    line-height: 20px;
+    font-size: 24px;
+    text-align: justify;
+    border-radius: 5px;
+}
+
+.step h3 {
+    margin-bottom: 10px;
+    /* padding: 0px 25px; */
+}
+
+.step p {
+    font-size: 16px;
+    color: #d1d2d3;
+    /* padding: 0px 25px; */
+}
+
+.step img {
+    width: 100%;
+}
+
+@media (max-width: 750px) {
+    .centered,
+    .lefty,
+    .righty,
+    .fully {
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
+
+
+/*-------------------------
+/* $Drone Path
+---------------------------*/
+
+.marker {
+    background-image: url('../images/drone-01.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mapboxgl-popup {
+    opacity: 0.7;
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+    /* color: #7b7b7b; */
+    border-top-color: #7b7b7b;
+}
+
+.mapboxgl-popup-content {
+    padding: 0px 8px;
+    background-color: #7b7b7b;
+    color: #ffffff;
+}
+
+
+/*-------------------------
+/* $Fix issue on mobile browser where scroll breaks
+---------------------------*/
+
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
+    touch-action: unset;
+}

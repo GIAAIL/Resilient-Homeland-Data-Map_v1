@@ -1,0 +1,706 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*-------------------------*/
+
+
+/* $Color 
+---------------------------*/
+
+
+/* background color */
+
+.bg-color--default {
+    background-color: #d1d2d3;
+}
+
+.bg-color--primary {
+    background-color: #03f5f5;
+}
+
+.bg-color--secondary {
+    background-color: #1e9696;
+}
+
+.bg-color--positive {
+    background-color: #f19ba0;
+}
+
+.bg-color--negative {
+    background-color: #f2b94a;
+}
+
+.bg-color--dark-black {
+    background-color: #191e23;
+}
+
+.bg-color--black {
+    background-color: #000000;
+}
+
+.bg-color--dark-grey {
+    background-color: #515151;
+}
+
+.bg-color--grey {
+    background-color: #d1d2d3;
+}
+
+.bg-color--light-grey {
+    background-color: #f4f4f4;
+}
+
+.bg-color--white {
+    background-color: #fff;
+}
+
+
+/* text color */
+
+.color--default {
+    color: #d1d2d3;
+}
+
+.color--primary {
+    color: #03f5f5;
+}
+
+.color--secondary {
+    color: #1e9696;
+}
+
+.color--positive {
+    color: #f19ba0;
+}
+
+.color--negative {
+    color: #f2b94a;
+}
+
+.color--black {
+    color: #000000;
+}
+
+.color--dark-grey {
+    color: #191e23;
+}
+
+.color--grey {
+    color: #d1d2d3;
+}
+
+.color--light-grey {
+    color: #f4f4f4;
+}
+
+.color--white {
+    color: #fff;
+}
+
+
+/*-------------------------*/
+
+
+/* $Typography 
+---------------------------*/
+
+html,
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Raleway', "Noto Sans TC", sans-serif;
+    font-size: 84px;
+    font-weight: 600;
+    line-height: 64px;
+    letter-spacing: 6px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-family: 'Raleway', "Noto Sans TC", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-family: 'Raleway', "Noto Sans TC", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+
+h4 {
+    font-family: 'Raleway', "Noto Sans TC", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    -moz-osx-font-smoothing: grayscale;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+h5 {
+    font-family: 'Raleway', "Noto Sans TC", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.5em;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+h6 {
+    font-family: 'Raleway', "Noto Sans TC", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.3em;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+
+/* link */
+
+a {
+    text-decoration: none;
+    color: #353630;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+
+/* horizontal rule */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #d1d2d3;
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+.keyword {
+    padding: 2px 4px;
+    background-color: rgba(241, 155, 160, 0.2);
+}
+
+
+/*
+.copyright{
+	position: absolute;
+	bottom: 0;
+}
+*/
+
+
+/*-------------------------*/
+
+
+/* $Icons 
+---------------------------*/
+
+
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+
+/* FONT PATH
+ * -------------------------- */
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 18px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #d53c61;
+}
+
+
+/* makes the font 33% larger relative to the icon container */
+
+.fa-lg {
+    font-size: 1.33333333em;
+    line-height: 0.75em;
+    vertical-align: -15%;
+}
+
+.fa-2x {
+    font-size: 2em;
+}
+
+.fa-3x {
+    font-size: 3em;
+}
+
+.fa-4x {
+    font-size: 4em;
+}
+
+.fa-5x {
+    font-size: 5em;
+}
+
+.fa-light-grey {
+    color: #f4f4f4;
+}
+
+.fa-dark-black {
+    color: #353630;
+}
+
+.fa-search:before {
+    content: "\f002";
+}
+
+.fa-angle-down:before {
+    content: "\f107";
+}
+
+.fa-angle-left:before {
+    content: "\f104";
+}
+
+.fa-angle-right:before {
+    content: "\f105";
+}
+
+.fa-angle-up:before {
+    content: "\f106";
+}
+
+.fa-angle-down:before {
+    content: "\f107";
+}
+
+.fa-chevron-up:before {
+    content: "\f077";
+}
+
+.fa-chevron-down:before {
+    content: "\f078";
+}
+
+.fa-chevron-left:before {
+    content: "\f053";
+}
+
+.fa-chevron-right:before {
+    content: "\f054";
+}
+
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+    content: "\f1d9";
+}
+
+.fa-quote-left:before {
+    content: "\f10d";
+}
+
+.fa-quote-right:before {
+    content: "\f10e";
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+.fa-chain:before,
+.fa-link:before {
+    content: "\f0c1";
+}
+
+.fa-user:before {
+    content: "\f007";
+}
+
+.fa-group:before,
+.fa-users:before {
+    content: "\f0c0";
+}
+
+
+/*-------------------------*/
+
+
+/* $Utility 
+---------------------------*/
+
+
+/* padding */
+
+.u-padding-4 {
+    padding: 4px !important;
+}
+
+.u-padding-8 {
+    padding: 8px !important;
+}
+
+.u-padding-16 {
+    padding: 16px !important;
+}
+
+.u-padding-24 {
+    padding: 24px !important;
+}
+
+.u-padding-32 {
+    padding: 32px !important;
+}
+
+.u-padding-40 {
+    padding: 40px !important;
+}
+
+.u-padding-48 {
+    padding: 48px !important;
+}
+
+.u-pt-4 {
+    padding-top: 4px !important;
+}
+
+.u-pt-8 {
+    padding-top: 8px !important;
+}
+
+.u-pt-16 {
+    padding-top: 16px !important;
+}
+
+.u-pt-24 {
+    padding-top: 24px !important;
+}
+
+.u-pt-32 {
+    padding-top: 32px !important;
+}
+
+.u-pt-40 {
+    padding-top: 40px !important;
+}
+
+.u-pt-48 {
+    padding-top: 48px !important;
+}
+
+.u-pr-4 {
+    padding-right: 4px !important;
+}
+
+.u-pr-8 {
+    padding-right: 8px !important;
+}
+
+.u-pr-16 {
+    padding-right: 16px !important;
+}
+
+.u-pr-24 {
+    padding-right: 24px !important;
+}
+
+.u-pr-32 {
+    padding-right: 32px !important;
+}
+
+.u-pr-40 {
+    padding-right: 40px !important;
+}
+
+.u-pr-48 {
+    padding-right: 48px !important;
+}
+
+.u-pb-4 {
+    padding-bottom: 4px !important;
+}
+
+.u-pb-8 {
+    padding-bottom: 8px !important;
+}
+
+.u-pb-16 {
+    padding-bottom: 16px !important;
+}
+
+.u-pb-24 {
+    padding-bottom: 24px !important;
+}
+
+.u-pb-32 {
+    padding-bottom: 32px !important;
+}
+
+.u-pb-40 {
+    padding-bottom: 40px !important;
+}
+
+.u-pb-48 {
+    padding-bottom: 48px !important;
+}
+
+.u-pl-4 {
+    padding-left: 4px !important;
+}
+
+.u-pl-8 {
+    padding-left: 8px !important;
+}
+
+.u-pl-16 {
+    padding-left: 16px !important;
+}
+
+.u-pl-24 {
+    padding-left: 24px !important;
+}
+
+.u-pl-32 {
+    padding-left: 32px !important;
+}
+
+.u-pl-40 {
+    padding-left: 40px !important;
+}
+
+.u-pl-48 {
+    padding-left: 48px !important;
+}
+
+
+/* margin */
+
+.u-margin-4 {
+    margin: 4px !important;
+}
+
+.u-margin-8 {
+    margin: 8px !important;
+}
+
+.u-margin-16 {
+    margin: 16px !important;
+}
+
+.u-margin-24 {
+    margin: 24px !important;
+}
+
+.u-margin-32 {
+    margin: 32px !important;
+}
+
+.u-margin-40 {
+    margin: 40px !important;
+}
+
+.u-margin-48 {
+    margin: 48px !important;
+}
+
+.u-mt-4 {
+    margin-top: 4px !important;
+}
+
+.u-mt-8 {
+    margin-top: 8px !important;
+}
+
+.u-mt-16 {
+    margin-top: 16px !important;
+}
+
+.u-mt-24 {
+    margin-top: 24px !important;
+}
+
+.u-mt-32 {
+    margin-top: 32px !important;
+}
+
+.u-mt-40 {
+    margin-top: 40px !important;
+}
+
+.u-mt-48 {
+    margin-top: 48px !important;
+}
+
+.u-mr-4 {
+    margin-right: 4px !important;
+}
+
+.u-mr-8 {
+    margin-right: 8px !important;
+}
+
+.u-mr-16 {
+    margin-right: 16px !important;
+}
+
+.u-mr-24 {
+    margin-right: 24px !important;
+}
+
+.u-mr-32 {
+    margin-right: 32px !important;
+}
+
+.u-mr-40 {
+    margin-right: 40px !important;
+}
+
+.u-mr-48 {
+    margin-right: 48px !important;
+}
+
+.u-mb-4 {
+    margin-bottom: 4px !important;
+}
+
+.u-mb-8 {
+    margin-bottom: 8px !important;
+}
+
+.u-mb-16 {
+    margin-bottom: 16px !important;
+}
+
+.u-mb-24 {
+    margin-bottom: 24px !important;
+}
+
+.u-mb-32 {
+    margin-bottom: 32px !important;
+}
+
+.u-mb-40 {
+    margin-bottom: 40px !important;
+}
+
+.u-mb-48 {
+    margin-bottom: 48px !important;
+}
+
+.u-ml-4 {
+    margin-left: 4px !important;
+}
+
+.u-pl-8 {
+    padding-left: 8px !important;
+}
+
+.u-pl-16 {
+    padding-left: 16px !important;
+}
+
+.u-pl-24 {
+    padding-left: 24px !important;
+}
+
+.u-pl-32 {
+    padding-left: 32px !important;
+}
+
+.u-pl-40 {
+    padding-left: 40px !important;
+}
+
+.u-pl-48 {
+    padding-left: 48px !important;
+}
+
+
+/* text */
+
+.u-text-center {
+    text-align: center !important;
+}
+
+.u-text-right {
+    text-align: right !important;
+}
+
+
+/* float */
+
+.u-pull-left {
+    float: left !important;
+}
+
+.u-push-right {
+    float: right !important;
+}
+
+
+/* hide & show */
+
+.u-hidden {
+    display: none !important;
+}
+
+.u-show {
+    display: block !important;
+}
+
+
+/* center block */
+
+.u-center-block {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}

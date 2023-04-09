@@ -267,8 +267,8 @@ map.on("load", function() {
                 elem_mediaVideo.classList.add('u-hidden');
             }
             // clear media src if chapter scroll
-            elem_mediaImg.src = "../images/info_loading.PNG";
-            elem_mediaVideo.src = "../images/info_loading.PNG";
+            elem_mediaImg.src = "https://github.com/GIAAIL/Resilient-Homeland-Data-Map_v1/blob/main/images/info_loading.PNG";
+            elem_mediaVideo.src = "https://github.com/GIAAIL/Resilient-Homeland-Data-Map_v1/blob/main/images/info_loading.PNG";
 
 
             // update the project title h2

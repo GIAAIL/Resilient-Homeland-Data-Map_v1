@@ -267,8 +267,8 @@ map.on("load", function() {
                 elem_mediaVideo.classList.add('u-hidden');
             }
             // clear media src if chapter scroll
-            elem_mediaImg.src = "../images/info_loading.PNG";
-            elem_mediaVideo.src = "../images/info_loading.PNG";
+            elem_mediaImg.src = "images/info_loading.PNG";
+            elem_mediaVideo.src = "images/info_loading.PNG";
 
 
             // update the project title h2
@@ -392,7 +392,7 @@ map.on("load", function() {
 
     // Add Video Symbol Layer -------------------------------------------------------
     map.loadImage(
-        '../images/pin_VideoCamera.png',
+        'images/pin_VideoCamera.png',
         (error, image) => {
             if (error) throw error;
             map.addImage('custom-marker', image);

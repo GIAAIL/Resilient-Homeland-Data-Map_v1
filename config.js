@@ -117,10 +117,10 @@ var config = {
             onChapterExit: [],
             mediaType: 'none'
         }, {
-            id: 'Video Streaming',
+            id: 'fifth-chapter',
             alignment: 'left',
             hidden: false,
-            title: 'Project Yeeeee',
+            title: 'Video Streaming',
             // image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
             location: {
